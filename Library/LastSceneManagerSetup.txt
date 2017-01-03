@@ -1,0 +1,4 @@
+sceneSetups:
+- path: C:/Users/MSI/workspace/MAR/Assets/tp1_scene_mar.unity
+  isLoaded: 1
+  isActive: 1
