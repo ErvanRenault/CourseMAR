@@ -32,6 +32,23 @@ ModelImporter:
     100048: Mountain
     100050: Plane
     100052: //RootNode
+    100054: Cylinder.002
+    100056: Cylinder.003
+    100058: Cylinder.004
+    100060: Cylinder.047
+    100062: Cylinder.048
+    100064: Icosphere
+    100066: Icosphere.001
+    100068: Icosphere.002
+    100070: Icosphere.003
+    100072: Icosphere.064
+    100074: Icosphere.065
+    100076: Icosphere.066
+    100078: Icosphere.067
+    100080: Plane.001
+    100082: Tree_Cylinder
+    100084: Tree_Cylinder.016
+    100086: MountainUnder
     400000: Camera
     400002: Cube.001_Cube.002
     400004: Cube.002_Cube.003
@@ -59,6 +76,23 @@ ModelImporter:
     400048: Mountain
     400050: Plane
     400052: //RootNode
+    400054: Cylinder.002
+    400056: Cylinder.003
+    400058: Cylinder.004
+    400060: Cylinder.047
+    400062: Cylinder.048
+    400064: Icosphere
+    400066: Icosphere.001
+    400068: Icosphere.002
+    400070: Icosphere.003
+    400072: Icosphere.064
+    400074: Icosphere.065
+    400076: Icosphere.066
+    400078: Icosphere.067
+    400080: Plane.001
+    400082: Tree_Cylinder
+    400084: Tree_Cylinder.016
+    400086: MountainUnder
     2300000: Cube.001_Cube.002
     2300002: Cube.002_Cube.003
     2300004: Cube.003_Cube.004
@@ -83,6 +117,23 @@ ModelImporter:
     2300042: Cylinder.001
     2300044: Mountain
     2300046: Plane
+    2300048: Cylinder.002
+    2300050: Cylinder.003
+    2300052: Cylinder.004
+    2300054: Cylinder.047
+    2300056: Cylinder.048
+    2300058: Icosphere
+    2300060: Icosphere.001
+    2300062: Icosphere.002
+    2300064: Icosphere.003
+    2300066: Icosphere.064
+    2300068: Icosphere.065
+    2300070: Icosphere.066
+    2300072: Icosphere.067
+    2300074: Plane.001
+    2300076: Tree_Cylinder
+    2300078: Tree_Cylinder.016
+    2300080: MountainUnder
     3300000: Cube.001_Cube.002
     3300002: Cube.002_Cube.003
     3300004: Cube.003_Cube.004
@@ -107,6 +158,23 @@ ModelImporter:
     3300042: Cylinder.001
     3300044: Mountain
     3300046: Plane
+    3300048: Cylinder.002
+    3300050: Cylinder.003
+    3300052: Cylinder.004
+    3300054: Cylinder.047
+    3300056: Cylinder.048
+    3300058: Icosphere
+    3300060: Icosphere.001
+    3300062: Icosphere.002
+    3300064: Icosphere.003
+    3300066: Icosphere.064
+    3300068: Icosphere.065
+    3300070: Icosphere.066
+    3300072: Icosphere.067
+    3300074: Plane.001
+    3300076: Tree_Cylinder
+    3300078: Tree_Cylinder.016
+    3300080: MountainUnder
     4300000: Cube.001_Cube.002
     4300002: Cube.018_Cube.019
     4300004: Cube.016_Cube.017
@@ -131,6 +199,23 @@ ModelImporter:
     4300042: Cylinder.001
     4300044: Mountain
     4300046: Plane
+    4300048: Plane.001
+    4300050: Tree_Cylinder
+    4300052: Icosphere.003
+    4300054: Cylinder.004
+    4300056: Cylinder.002
+    4300058: Cylinder.003
+    4300060: Icosphere
+    4300062: Icosphere.001
+    4300064: Icosphere.002
+    4300066: Tree_Cylinder.016
+    4300068: Cylinder.047
+    4300070: Cylinder.048
+    4300072: Icosphere.064
+    4300074: Icosphere.065
+    4300076: Icosphere.066
+    4300078: Icosphere.067
+    4300080: MountainUnder
   materials:
     importMaterials: 1
     materialName: 0
