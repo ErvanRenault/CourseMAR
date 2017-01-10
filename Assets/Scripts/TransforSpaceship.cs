@@ -37,12 +37,12 @@ public class TransforSpaceship : MonoBehaviour {
 			if (acceleration < 1F) {
 				acceleration = 1F;
 			}
-			transform.Translate (Vector3.back * acceleration * Time.deltaTime);
+			transform.Translate (Vector3.forward * acceleration * Time.deltaTime);
 			if (acceleration < speedLimit) {
 				this.acceleration *= 1.03F;	
 			}
 		} else {
-			transform.Translate(Vector3.back * acceleration * Time.deltaTime);
+			transform.Translate(Vector3.forward * acceleration * Time.deltaTime);
 
 		}
 		if (acceleration > 1) {
