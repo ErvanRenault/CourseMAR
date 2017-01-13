@@ -45,6 +45,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\CheckPoints.cs" />
+     <Compile Include="Assets\Scripts\Death.cs" />
      <Compile Include="Assets\Scripts\TransforSpaceship.cs" />
      <Compile Include="Assets\Scripts\UpAndDown.cs" />
      <Compile Include="Assets\Scripts\UpandDownCollision.cs" />
