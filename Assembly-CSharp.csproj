@@ -45,11 +45,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Menu\LoadScene.cs" />
+     <Compile Include="Assets\Menu\QuitOnClick.cs" />
      <Compile Include="Assets\Scripts\CheckPoints.cs" />
      <Compile Include="Assets\Scripts\Death.cs" />
      <Compile Include="Assets\Scripts\TransforSpaceship.cs" />
      <Compile Include="Assets\Scripts\UpAndDown.cs" />
      <Compile Include="Assets\Scripts\UpandDownCollision.cs" />
+     <None Include="Assets\Menu\Fonts\Jupiter\LICENSE.txt" />
+     <None Include="Assets\Menu\Textures and Sprites\SF UI\Background\LICENSE.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/opt/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
