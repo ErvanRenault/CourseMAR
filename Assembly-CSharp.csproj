@@ -47,6 +47,7 @@
   <ItemGroup>
      <Compile Include="Assets\Menu\LoadScene.cs" />
      <Compile Include="Assets\Menu\QuitOnClick.cs" />
+     <Compile Include="Assets\Scripts\ChangeCamera.cs" />
      <Compile Include="Assets\Scripts\CheckPoints.cs" />
      <Compile Include="Assets\Scripts\Death.cs" />
      <Compile Include="Assets\Scripts\TransforSpaceship.cs" />
