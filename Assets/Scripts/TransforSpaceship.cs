@@ -12,6 +12,8 @@ public class TransforSpaceship : MonoBehaviour {
 	public Rigidbody rb;
 
 
+
+
 	private Vector3 moveDirection = Vector3.zero;
 	// Use this for initialization
 	void Start () {
