@@ -45,8 +45,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Menu\LoadScene.cs" />
-     <Compile Include="Assets\Menu\QuitOnClick.cs" />
+     <Compile Include="Assets\Menu\Scripts\LoadScene.cs" />
+     <Compile Include="Assets\Menu\Scripts\QuitOnClick.cs" />
      <Compile Include="Assets\Scripts\ChangeCamera.cs" />
      <Compile Include="Assets\Scripts\CheckPoints.cs" />
      <Compile Include="Assets\Scripts\Death.cs" />
