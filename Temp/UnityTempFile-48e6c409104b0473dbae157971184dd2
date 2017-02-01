@@ -84,8 +84,6 @@
 -define:UNITY_EDITOR_64
 -define:UNITY_EDITOR_LINUX
 -define:UNITY_TEAM_LICENSE
-Assets/Menu/LoadScene.cs
-Assets/Menu/QuitOnClick.cs
 Assets/Menu/Scripts/LoadScene.cs
 Assets/Menu/Scripts/QuitOnClick.cs
 Assets/Scripts/ChangeCamera.cs
