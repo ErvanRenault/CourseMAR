@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+﻿﻿using UnityEngine;
 using System.Collections;
 
 public class TransforSpaceship : MonoBehaviour {
@@ -10,9 +10,8 @@ public class TransforSpaceship : MonoBehaviour {
 	public float turnSpeed = 100f;
 	private Vector3 direction;
 	public Rigidbody rb;
-
-
-
+	public ParticleEmitter pr;
+	public ParticleEmitter pl;
 
 	private Vector3 moveDirection = Vector3.zero;
 	// Use this for initialization
@@ -26,7 +25,8 @@ public class TransforSpaceship : MonoBehaviour {
 
 	}
 	void FixedUpdate(){
-
+		pl.maxEmission = 1000;
+		pr.maxEmission = 1000;
 		//perte de vitesse
 		if (acceleration > 1) {
 			this.acceleration *= 0.99F;
@@ -35,8 +35,11 @@ public class TransforSpaceship : MonoBehaviour {
 		if (Input.GetKey (KeyCode.Space)) {
 			this.acceleration *= 0.97F;			
 		}
-
+		//turbo
 		if (Input.GetKey (KeyCode.Tab)) {
+
+			pl.maxEmission = 100000;
+			pr.maxEmission= 100000;
 			rb.AddRelativeForce (new Vector3 (0, 0, acceleration));
 			if (acceleration < (speedLimit * 1.2)) {
 				this.acceleration *= 1.2F;	
