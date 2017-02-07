@@ -53,6 +53,7 @@
      <Compile Include="Assets\Scripts\TransforSpaceship.cs" />
      <Compile Include="Assets\Scripts\UpAndDown.cs" />
      <Compile Include="Assets\Scripts\UpandDownCollision.cs" />
+     <Compile Include="Assets\Scripts\WrongDirectionScript.cs" />
      <None Include="Assets\Menu\Fonts\Jupiter\LICENSE.txt" />
      <None Include="Assets\Menu\Textures and Sprites\SF UI\Background\LICENSE.txt" />
  <Reference Include="UnityEngine.UI">
