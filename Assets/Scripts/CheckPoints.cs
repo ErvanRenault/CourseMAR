@@ -6,6 +6,8 @@ public class CheckPoints : MonoBehaviour {
 	private GameObject player;
 	public int checkNumber;
 	public Quaternion rotation;
+	public int currentWaypoint;
+
 	// Use this for initialization
 	void Start () {
 		player = GameObject.FindGameObjectWithTag ("Player");
@@ -16,12 +18,12 @@ public class CheckPoints : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider col) {
-		print ("yolo");
 		int lastCheck = player.GetComponent<Death> ().checkNumber;
 		if (lastCheck < checkNumber) {
 			player.GetComponent<Death> ().checkNumber = checkNumber;
 			player.GetComponent<Death> ().checkpoint = transform.position;
 			player.GetComponent<Death> ().rotation = rotation;
+			player.GetComponent<Death> ().currentWaypoint = currentWaypoint;
 		}
 	}
 }

@@ -3,27 +3,26 @@ using System.Collections;
 
 public class WrongDirectionScript : MonoBehaviour {
 	public GameObject[] waypoints;
-	public int currentWaypoint;
-	public int lastWaypoint;
-	public GameObject currWaypoint;
-	public GameObject nextWaypoint;
-	public Vector3 trackDir;
-	public float distance;
-	public float distanceToNext;
-	public Vector3 carHeading;
+	public int currentWaypoint = 0;
+	public int lastWaypoint = -1;
+	private GameObject currWaypoint;
+	private GameObject nextWaypoint;
+	private Vector3 trackDir;
+	private float distance;
+	private float distanceToNext;
+	private Vector3 carHeading;
 	public bool wrong;
+	public GameObject text;
 
 	// Use this for initialization
 	void Start () {
-		currentWaypoint = 0;
-		lastWaypoint = -1;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		if (lastWaypoint != currentWaypoint) {
-			currWaypoint = waypoints [currentWaypoint];
-			nextWaypoint = waypoints [currentWaypoint + 1];
+			currWaypoint = waypoints [currentWaypoint%waypoints.Length];
+			nextWaypoint = waypoints [(currentWaypoint + 1)%waypoints.Length];
 			lastWaypoint = currentWaypoint;
 		}
 		trackDir = nextWaypoint.transform.position - currWaypoint.transform.position;
@@ -36,9 +35,9 @@ public class WrongDirectionScript : MonoBehaviour {
 			currentWaypoint++;
 
 		if (Vector3.Dot (transform.forward, trackDir) < 0F) {
-			wrong = true;
+			text.SetActive(true);
 		} else {
-			wrong = false;
+			text.SetActive(false);
 		}
 	}
 }

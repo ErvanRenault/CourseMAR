@@ -1,4 +1,4 @@
-﻿﻿using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 
 public class Death : MonoBehaviour {
@@ -7,6 +7,7 @@ public class Death : MonoBehaviour {
 	public int checkNumber;
 	public Vector3 checkpoint;
 	public Quaternion rotation;
+	public int currentWaypoint;
 
 	// Use this for initialization
 	void Start () {
@@ -19,13 +20,10 @@ public class Death : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetKey (KeyCode.K)) {
-			print (transform.rotation);
 			player.GetComponent<TransforSpaceship> ().acceleration = 0F	;
-			//transform.rotation = Quaternion.Euler (0, 0, 0);
+			player.GetComponent<WrongDirectionScript> ().currentWaypoint = currentWaypoint;
 			transform.position = checkpoint;
-			print (rotation.y);
 			transform.rotation = Quaternion.Euler (rotation.x, rotation.y, rotation.z);
-			print (transform.rotation);
 		}
 	}	
 }
