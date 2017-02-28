@@ -12,9 +12,7 @@ public class Death : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		player = GameObject.FindGameObjectWithTag ("Player");
-		checkNumber = 0;
-		checkpoint = transform.position;
-		rotation = transform.rotation;
+		checkNumber = -1;
 	}
 
 	// Update is called once per frame
@@ -25,5 +23,16 @@ public class Death : MonoBehaviour {
 			transform.position = checkpoint;
 			transform.rotation = Quaternion.Euler (rotation.x, rotation.y, rotation.z);
 		}
+
 	}	
+
+
+	void OnTriggerEnter(Collider col) {
+		if (col.gameObject.tag =="Dead") {
+			player.GetComponent<TransforSpaceship> ().acceleration = 0F	;
+			player.GetComponent<WrongDirectionScript> ().currentWaypoint = currentWaypoint;
+			transform.position = checkpoint;
+			transform.rotation = Quaternion.Euler (rotation.x, rotation.y, rotation.z);
+		}
+	}
 }
